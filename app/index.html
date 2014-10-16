@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>AngularJS Tutorials</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="fifaApp" ng-controller="FifaCtrl as fifa">
+<div class="container">
+    <div class="page-header">
+        <h1>The FIFA World Ranking
+            <small>Where is Poland?</small>
+        </h1>
+    </div>
+    <div>
+        <div class="panel-body text-center">
+            <button class="btn btn-default" ng-click="fifa.showPolandRank($event)">Where is Poland?</button>
+            <code ng-if="fifa.PolandRank">{{fifa.type}}</code>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th class="text-center">Rank</th>
+                <th class="text-center">Team</th>
+                <th class="text-center">Total Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="rank in fifa.ranking track by $index">
+                <td class="col-md-3">{{$index +1}}</td>
+                <td class="col-md-3">{{rank.team}}</td>
+                <td class="col-md-3">{{rank.points}}</td>
+            </tr>
+            <tr class="alert-info" ng-if="fifa.PolandRank">
+                <td class="col-md-3">41</td>
+                <td class="col-md-3">Poland</td>
+                <td class="col-md-3">680</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="fifa.js"></script>
+</body>
+</html>
