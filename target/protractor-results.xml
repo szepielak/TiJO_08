@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Sea application" timestamp="2016-04-25T21:40:33" hostname="localhost" time="31.344" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Sea application.initialization" timestamp="2016-04-25T21:40:34" hostname="localhost" time="3.139" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Sea application.initialization.first ship" timestamp="2016-04-25T21:40:34" hostname="localhost" time="1.088" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.initialization.first ship" name="should display first ship" time="0.368" />
+  <testcase classname="Sea application.initialization.first ship" name="should have custom-check attribute" time="0.376" />
+  <testcase classname="Sea application.initialization.first ship" name="should have conditions attribute" time="0.337" />
+ </testsuite>
+ <testsuite name="Sea application.initialization.second ship" timestamp="2016-04-25T21:40:35" hostname="localhost" time="1.038" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.initialization.second ship" name="should display second ship" time="0.216" />
+  <testcase classname="Sea application.initialization.second ship" name="should have custom-check attribute" time="0.443" />
+  <testcase classname="Sea application.initialization.second ship" name="should have conditions attribute" time="0.367" />
+ </testsuite>
+ <testsuite name="Sea application.initialization.third ship" timestamp="2016-04-25T21:40:36" hostname="localhost" time="1.011" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.initialization.third ship" name="should display third ship" time="0.223" />
+  <testcase classname="Sea application.initialization.third ship" name="should have custom-check attribute" time="0.432" />
+  <testcase classname="Sea application.initialization.third ship" name="should have conditions attribute" time="0.353" />
+ </testsuite>
+ <testsuite name="Sea application.set conditions" timestamp="2016-04-25T21:40:37" hostname="localhost" time="26.755" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Sea application.set conditions.set good weather conditions" timestamp="2016-04-25T21:40:41" hostname="localhost" time="10.916" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Sea application.set conditions.set good weather conditions.set sunny" timestamp="2016-04-25T21:40:41" hostname="localhost" time="6.009" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.set conditions.set good weather conditions.set sunny" name="should display &quot;sunny&quot; image" time="0.309" />
+  <testcase classname="Sea application.set conditions.set good weather conditions.set sunny" name="should display &quot;Set sails!&quot; message for first ship" time="0.999" />
+  <testcase classname="Sea application.set conditions.set good weather conditions.set sunny" name="should display &quot;Set sails!&quot; message for second ship" time="0.994" />
+  <testcase classname="Sea application.set conditions.set good weather conditions.set sunny" name="should display &quot;Set sails!&quot; message for third ship" time="1.1" />
+ </testsuite>
+ <testsuite name="Sea application.set conditions.set good weather conditions.set clear" timestamp="2016-04-25T21:40:47" hostname="localhost" time="4.907" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.set conditions.set good weather conditions.set clear" name="should display &quot;clear image" time="0.209" />
+  <testcase classname="Sea application.set conditions.set good weather conditions.set clear" name="should display &quot;Set sails!&quot; message for first ship" time="0.801" />
+  <testcase classname="Sea application.set conditions.set good weather conditions.set clear" name="should display &quot;Set sails!&quot; message for second ship" time="0.843" />
+  <testcase classname="Sea application.set conditions.set good weather conditions.set clear" name="should display &quot;Set sails!&quot; message for third ship" time="0.808" />
+ </testsuite>
+ <testsuite name="Sea application.set conditions.set bad weather conditions" timestamp="2016-04-25T21:40:52" hostname="localhost" time="12.175" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Sea application.set conditions.set bad weather conditions.set heavy rain" timestamp="2016-04-25T21:40:54" hostname="localhost" time="5.83" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set heavy rain" name="should display &quot;heavy rain image" time="0.311" />
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set heavy rain" name="should not display &quot;Set sails!&quot; message for first ship" time="0.897" />
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set heavy rain" name="should display &quot;Set sails!&quot; message for second ship" time="1.597" />
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set heavy rain" name="should display &quot;Set sails!&quot; message for third ship" time="1.032" />
+ </testsuite>
+ <testsuite name="Sea application.set conditions.set bad weather conditions.set storm" timestamp="2016-04-25T21:41:00" hostname="localhost" time="4.42" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set storm" name="should display &quot;stormy&quot; image" time="0.21" />
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set storm" name="should not display &quot;Set sails!&quot; message for first ship" time="0.708" />
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set storm" name="should not display &quot;Set sails!&quot; message for second ship" time="0.753" />
+  <testcase classname="Sea application.set conditions.set bad weather conditions.set storm" name="should not display &quot;Set sails!&quot; message for third ship" time="0.659" />
+ </testsuite>
+</testsuites>

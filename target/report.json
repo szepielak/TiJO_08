@@ -1,0 +1,127 @@
+[
+  {
+    "description": "should display first ship",
+    "assertions": [],
+    "duration": 367
+  },
+  {
+    "description": "should have custom-check attribute",
+    "assertions": [],
+    "duration": 376
+  },
+  {
+    "description": "should have conditions attribute",
+    "assertions": [],
+    "duration": 337
+  },
+  {
+    "description": "should display second ship",
+    "assertions": [],
+    "duration": 216
+  },
+  {
+    "description": "should have custom-check attribute",
+    "assertions": [],
+    "duration": 443
+  },
+  {
+    "description": "should have conditions attribute",
+    "assertions": [],
+    "duration": 367
+  },
+  {
+    "description": "should display third ship",
+    "assertions": [],
+    "duration": 223
+  },
+  {
+    "description": "should have custom-check attribute",
+    "assertions": [],
+    "duration": 432
+  },
+  {
+    "description": "should have conditions attribute",
+    "assertions": [],
+    "duration": 353
+  },
+  {
+    "description": "should display \"sunny\" image",
+    "assertions": [],
+    "duration": 309
+  },
+  {
+    "description": "should display \"Set sails!\" message for first ship",
+    "assertions": [],
+    "duration": 999
+  },
+  {
+    "description": "should display \"Set sails!\" message for second ship",
+    "assertions": [],
+    "duration": 994
+  },
+  {
+    "description": "should display \"Set sails!\" message for third ship",
+    "assertions": [],
+    "duration": 1100
+  },
+  {
+    "description": "should display \"clear image",
+    "assertions": [],
+    "duration": 209
+  },
+  {
+    "description": "should display \"Set sails!\" message for first ship",
+    "assertions": [],
+    "duration": 801
+  },
+  {
+    "description": "should display \"Set sails!\" message for second ship",
+    "assertions": [],
+    "duration": 843
+  },
+  {
+    "description": "should display \"Set sails!\" message for third ship",
+    "assertions": [],
+    "duration": 808
+  },
+  {
+    "description": "should display \"heavy rain image",
+    "assertions": [],
+    "duration": 311
+  },
+  {
+    "description": "should not display \"Set sails!\" message for first ship",
+    "assertions": [],
+    "duration": 897
+  },
+  {
+    "description": "should display \"Set sails!\" message for second ship",
+    "assertions": [],
+    "duration": 1597
+  },
+  {
+    "description": "should display \"Set sails!\" message for third ship",
+    "assertions": [],
+    "duration": 1032
+  },
+  {
+    "description": "should display \"stormy\" image",
+    "assertions": [],
+    "duration": 210
+  },
+  {
+    "description": "should not display \"Set sails!\" message for first ship",
+    "assertions": [],
+    "duration": 708
+  },
+  {
+    "description": "should not display \"Set sails!\" message for second ship",
+    "assertions": [],
+    "duration": 753
+  },
+  {
+    "description": "should not display \"Set sails!\" message for third ship",
+    "assertions": [],
+    "duration": 659
+  }
+]
