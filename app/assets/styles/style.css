@@ -1,0 +1,49 @@
+.ship {
+    width: 180px;
+    height: 295px;
+    background-image: url("../images/ship.png");
+    background-repeat: no-repeat;
+    background-size: 180px;
+    float: left;
+}
+
+.voffset {
+    margin-top: 5px;
+}
+
+.relative {
+    position: relative;
+}
+
+.align-bottom {
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.bubble
+{
+    margin: 30px 0 0 20px;
+    position: relative;
+    width: 135px;
+    height: 55px;
+    padding: 5px;
+    background: #FFFFFF;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+}
+
+.bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 35px 10px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -35px;
+    left: 15px;
+}

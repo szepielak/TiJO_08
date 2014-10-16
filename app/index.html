@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>AngularJS Tutorials</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body ng-app="weatherApp">
+<div class="container">
+    <div class="page-header">
+        <h1>Sea of directives </h1>
+    </div>
+    <div class="col-md-4" ng-controller="portCtrl">
+        <div class="text-center panel-default row">
+            <h2 class="panel-heading text-center">Docks</h2>
+
+            <div class="col-md-offset-1 col-md-10">
+                <h4 class="text-left">Change conditions:</h4>
+                <label>
+                    <select id="weatherCondition" class="form-control form-group" ng-model="currentCondition"
+                            ng-options="name for name in availableConditions"></select>
+                </label>
+
+                <div id="updateButton" class="btn btn-default col-md-7" ng-click="addCondition(currentCondition)">Update</div>
+                <div id="clearButton" class="btn btn-info col-md-offset-1 col-md-4" ng-click="clearConditions()">Clear</div>
+            </div>
+        </div>
+
+        <div id="currentConditionImages" class="text-center panel-default row">
+            <h2 class="panel-heading text-center">Current conditions</h2>
+            <img id="clearImg" ng-if="isCurrently('clear')" src="assets/images/clear.png">
+            <img id="cloudyImg" ng-if="isCurrently('cloudy')" src="assets/images/cloudy.png">
+            <img id="heavyRainImg" ng-if="isCurrently('heavy rain')" src="assets/images/heavyrain.png">
+            <img id="stormyImg" ng-if="isCurrently('stormy')" src="assets/images/storm.png">
+            <img id="sunnyImg" ng-if="isCurrently('sunny')" src="assets/images/sunny.png">
+            <img id="windyImg" ng-if="isCurrently('windy')" src="assets/images/windy.png">
+        </div>
+    </div>
+
+
+    <div class="col-md-offset-1 col-md-7 text-center panel-default" ng-controller="shipCtrl">
+        <div class="text-center panel-default row">
+            <h2 class="panel-heading text-center">Port</h2>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div id="boat1">
+                        <ship-sender custom-check="checkMyBoat(boat, currentConditions)"
+                                     conditions="{{weatherConditions.getCurrentConditions()}}"></ship-sender>
+                    </div>
+                    <div id="boat2">
+                        <ship-sender custom-check="checkMyBoat(boat, currentConditions)"
+                                     conditions="{{weatherConditions.getCurrentConditions()}}"></ship-sender>
+                    </div>
+                    <div id="boat3">
+                        <ship-sender custom-check="checkMyBoat(boat, currentConditions)"
+                                     conditions="{{weatherConditions.getCurrentConditions()}}"></ship-sender>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="docks.js"></script>
+<script src="port.js"></script>
+</body>
+</html>
