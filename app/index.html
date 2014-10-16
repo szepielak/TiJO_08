@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>AngularJS Tutorials</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="app">
+<div class="container" ng-controller="StudentCtrl">
+    <div class="page-header">
+        <h1>Students
+            <small>book</small>
+        </h1>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <label for="search" class="label label-default">Search...</label>
+            <input type="text" id="search" class="form-control" ng-model="searchStudent.$">
+        </div>
+        <table id="students" class="table table-hover table-bordered">
+            <thead>
+            <tr class="alert">
+                <th><label for="first" class="label label-default">First Name</label>
+                    <input type="text" class="form-control" id="first" ng-model="searchStudent.firstName">
+                </th>
+                <th><label for="last" class="label label-default">Last Name</label>
+                    <input type="text" class="form-control" id="last" ng-model="searchStudent.lastName">
+                </th>
+                <th><label for="age" class="label label-default">Age</label>
+                    <input type="text" class="form-control" id="age" ng-model="searchStudent.age">
+                </th>
+                <th><label for="email" class="label label-default">Email</label>
+                    <input type="text" class="form-control" id="email" ng-model="searchStudent.email">
+                </th>
+                <th><label for="phone" class="label label-default">Phone</label>
+                    <input type="text" class="form-control" id="phone" ng-model="searchStudent.phone">
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="text-center" ng-repeat="student in students.list | filter: searchStudent">
+                <td>{{student.firstName}}</td>
+                <td>{{student.lastName}}</td>
+                <td>{{student.age}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.phone}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="student.js"></script>
+</body>
+</html>
