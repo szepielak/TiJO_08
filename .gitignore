@@ -1,0 +1,6 @@
+#IDEs
+#IntelliJ Idea
+.idea
+*node_modules
+*app/bower_components
+*target
